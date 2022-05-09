@@ -1,0 +1,121 @@
+/* start font parking */
+
+@font-face {
+  src: url(../font/Ubuntu/Ubuntu-Light.ttf) format("truetype");
+  font-family: main-font;
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  src: url(../font/Ubuntu/Ubuntu-Regular.ttf) format("truetype");
+  font-family: main-font;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  src: url(../font/Ubuntu/Ubuntu-Medium.ttf) format("truetype");
+  font-family: main-font;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  src: url(../font/Ubuntu/Ubuntu-Bold.ttf) format("truetype");
+  font-family: main-font;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* end font parking */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+}
+:root {
+  --bg-color: #f2f6ff;
+  --primary-color: #554dde;
+  --accent-color: #f44e77;
+  --secondary-light-color: #6a6d9e;
+  --secondary-dark-color: #16194f;
+  --section-padding: 50px;
+  --primary-transition: 1.5s;
+  --accent-transition: 1s;
+  --secondary-transition: 0.5s;
+  --main-radius: 10px;
+  --accent-radius: 5px;
+}
+::selection {
+  background-color: #f44e782d;
+}
+body {
+  font-family: main-font;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* small */
+@media (min-width: 501px) {
+  .container {
+    width: 500px;
+  }
+}
+/* small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* medium */
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+  }
+}
+/* big */
+@media (min-width: 1199px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+/* end formating */
+body,
+section,
+.cont,
+.box,
+.prog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box,
+.prog {
+  height: 100%;
+}
+section {
+  background-color: var(--accent-color);
+  padding: 10px;
+}
+.cont {
+  height: 400px;
+  padding: 0 10px;
+}
+.cont .box {
+  flex-direction: column;
+}
+.cont .box .prog {
+  align-items: flex-end !important;
+  gap: 10px;
+}
+.cont .box .prog span {
+  background-color: var(--secondary-dark-color);
+  width: 20px;
+}
