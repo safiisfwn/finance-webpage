@@ -375,7 +375,7 @@ header .container > a {
 
 /* start about */
 .about {
-  padding-top: 200px;
+  padding-top: 100px;
   padding-bottom: 100px;
   display: grid;
   place-content: center;
@@ -563,7 +563,11 @@ header .container > a {
     -o-border-radius: 30px;
   }
 }
-
+@media (max-width: 500px) {
+  .finance .container .box .prog {
+    height: 200px;
+  }
+}
 .finance .container .box .prog .prog-bx {
   height: 100%;
   display: flex;
