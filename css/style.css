@@ -381,6 +381,11 @@ header .container > a {
   place-content: center;
   position: relative;
 }
+@media (max-width: 767px) {
+  .about{
+    padding-top: 100px;
+  }
+}
 .about .container {
   display: flex;
   justify-content: space-between;
