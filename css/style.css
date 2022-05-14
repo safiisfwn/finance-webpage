@@ -651,7 +651,7 @@ header .container > a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   animation: chart 10s linear infinite;
-  -webkit-animation: chart 5s linear forwards;
+  -webkit-animation: chart 20s linear forwards;
 }
 @media (max-width: 991px) {
   .finance .container .box .prog .prog-bx .prog-info span {
