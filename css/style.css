@@ -101,7 +101,7 @@ body {
 }
 @media (max-width: 500px) {
   .title {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 200;
     line-height: 1.4;
   }
@@ -173,6 +173,44 @@ body {
     -webkit-animation: none;
   }
 }
+.dots-bg {
+  background-image: url(/imgs/BG.png), url(/imgs/BG.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+}
+.main-head {
+  /* display: block; */
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.main-head h1 {
+  font-size: 67px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin: 0;
+}
+.main-head h1 span {
+  color: var(--accent-color);
+}
+@media (max-width: 1199px) {
+  .main-head h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-head h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 500px) {
+  .main-head h1 {
+    font-size: 30px;
+  }
+}
+
 /* componant */
 /* small */
 @media (min-width: 501px) {
@@ -203,7 +241,7 @@ body {
 
 /* start landing */
 .landing {
-  background-image: url(../imgs/BGmain-bg-blured.png);
+  background-image: url(../imgs/BGmain-bg-blured.webp);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -396,6 +434,7 @@ header .container > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 100px;
 }
 @media (max-width: 991px) {
   .about .container {
@@ -406,7 +445,7 @@ header .container > a {
   display: flex;
   flex-flow: wrap column;
   justify-content: space-between;
-  max-width: 500px;
+  max-width: 600px;
 }
 @media (max-width: 991px) {
   .about .container .box {
@@ -611,6 +650,8 @@ header .container > a {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  animation: chart 10s linear infinite;
+  -webkit-animation: chart 5s linear forwards;
 }
 @media (max-width: 991px) {
   .finance .container .box .prog .prog-bx .prog-info span {
@@ -639,6 +680,7 @@ header .container > a {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
+
 .sup .container {
   display: flex;
   justify-content: space-between;
@@ -711,7 +753,6 @@ header .container > a {
   display: inline-block;
   display: flex;
   place-items: center;
-  /* place-content: center; */
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -805,7 +846,160 @@ header .container > a {
 .sup .container .box .info:nth-child(2) .msg span {
   text-align: right;
 }
-/* end supprt */
+/* end support */
+/* start prices */
+.price {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.price .container .price-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  place-items: center;
+  gap: 100px;
+}
+.price .container .price-box .box {
+  background-color: white;
+  padding: 20px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.price .container .price-box .box h1 {
+  font-size: 60px;
+  font-weight: 200;
+}
+@media (max-width: 991px) {
+  .price .container .price-box .box h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .price .container .price-box .box h1 {
+    font-size: 40px;
+  }
+}
+.price .container .price-box .box h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .price .container .price-box .box h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .price .container .price-box .box h2 {
+    font-size: 40px;
+  }
+}
+.price .container .price-box .box h2 span {
+  font-size: 40px;
+  font-weight: 500;
+}
+@media (max-width: 991px) {
+  .price .container .price-box .box h2 span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .price .container .price-box .box h2 span {
+    font-size: 25px;
+  }
+}
+.price .container .price-box .box p {
+  text-align: center;
+  margin: 20px 0;
+}
+.price .container .price-box .box a {
+  background-color: white;
+  padding: 15px 20px;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@media (max-width: 767px) {
+  .price .container .price-box .box a {
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 500px) {
+  .price .container .price-box .box a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}
+.price .container .price-box .box img {
+  margin: 20px 0;
+  max-width: 350px;
+  height: auto;
+}
+.price .container .price-box .box .color {
+  display: flex;
+  gap: 5px;
+}
+.price .container .price-box .box .color span {
+  background-color: black;
+  background-image: linear-gradient(
+    var(--primary-color) 0%,
+    var(--primary-color) 50%,
+    var(--secondary-dark-color) 50%
+  );
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+
+  padding: 1px;
+}
+.price .container .price-box .box .active {
+  outline: 2px solid black;
+  border: 2px solid white;
+}
+.price .container .price-box .box ul {
+  margin-top: 30px;
+}
+.price .container .price-box .box ul li {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  font-size: 20px;
+  gap: 10px;
+}
+@media (max-width: 991px) {
+  .price .container .price-box .box ul li {
+    font-size: 18px;
+    gap: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .price .container .price-box .box ul li {
+    font-size: 15px;
+  }
+}
+.price .container .price-box .box ul li:not(:last-child) {
+  height: 45px;
+}
+.price .container .price-box .box ul .inactive {
+  color: #b7b7b7;
+}
+/* end prices */
 /* start animation */
 @keyframes arrow {
   0% {
@@ -821,6 +1015,14 @@ header .container > a {
     -moz-transform: translateX(3px);
     -ms-transform: translateX(3px);
     -o-transform: translateX(3px);
+  }
+}
+@keyframes chart {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 20%;
   }
 }
 
