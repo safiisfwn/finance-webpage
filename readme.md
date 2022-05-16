@@ -1,2 +1,2 @@
 **fits website I practice on it**
-https://safiisfwn.github.io/finance-webpage/
+https://sfwnisme.github.io/finance-webpage/
