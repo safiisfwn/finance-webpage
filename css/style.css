@@ -313,6 +313,11 @@ header .container {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header .container {
+    Padding-top: 20px;
+  }
+}
 header .container img {
   width: 60px;
   height: auto;
